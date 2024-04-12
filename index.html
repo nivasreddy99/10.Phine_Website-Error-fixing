@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Online Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('restaurant-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        .login-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .login-form input, .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .login-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation links can go here -->
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2>Book a Table Online</h2>
+            <p>Enjoy our delicious meals with a beautiful view.</p>
+
+            <div class="login-form">
+                <h3>Login</h3>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Our Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            // Here you would typically send the email and password to your server for authentication
+            alert('Login attempt with email: ' + email + ' and password: ' + password);
+        }
+    </script>
+</body>
+</html>
